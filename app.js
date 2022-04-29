@@ -4,12 +4,17 @@ const methodOverride = require('method-override');
 const ejsMate = require('ejs-mate');
 const session = require('express-session');
 const flash = require('connect-flash');
+const passport = require('passport');
+const LocalStrategy = require('passport-local');
+const User = require('./models/user');
 
 const ExpressError = require('./utils/ExpressError');
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/yelp-camp');
-const campgrounds = require('./routes/campgrounds');
-const reviews = require('./routes/reviews');
+
+const campgroundRoutes = require('./routes/campgrounds');
+const reviewRoutes = require('./routes/reviews');
+const userRoutes= require('./routes/users');
 
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error:"));
@@ -41,14 +46,24 @@ const sessionConfig = {
 app.use(session(sessionConfig));
 app.use(flash());
 
+app.use(passport.initialize());
+app.use(passport.session()); // so won't have to login with every request
+passport.use(new LocalStrategy(User.authenticate()));
+passport.serializeUser(User.serializeUser()); // store user in session
+passport.deserializeUser(User.deserializeUser()); // unstore user in session
+
+// makes variables available to templates in view folder inside the current req res cycle
 app.use((req, res, next) => {
+    console.log(req.session);
+    res.locals.currentUser = req.user;
     res.locals.success = req.flash('success');
     res.locals.error = req.flash('error');
     next();
 })
 
-app.use('/campgrounds', campgrounds);
-app.use('/campgrounds/:id/reviews', reviews);
+app.use('/', userRoutes);
+app.use('/campgrounds', campgroundRoutes);
+app.use('/campgrounds/:id/reviews', reviewRoutes);
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
