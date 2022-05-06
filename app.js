@@ -11,6 +11,7 @@ const flash = require('connect-flash');
 const passport = require('passport');
 const LocalStrategy = require('passport-local');
 const User = require('./models/user');
+const favicon = require('serve-favicon');
 
 const ExpressError = require('./utils/ExpressError');
 const mongoose = require('mongoose');
@@ -35,6 +36,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(favicon(__dirname + '/public/tent.png'));
 
 const sessionConfig = {
     secret: 'thisshouldbeabettersecret!',
