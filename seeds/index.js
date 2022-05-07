@@ -4,7 +4,7 @@ const {places, descriptors} = require('./seedHelpers');
 const mongoose = require('mongoose');
 
 // mongoose.connect('mongodb://localhost:27017/yelp-camp');
-mongoose.connect(process.env.DB_URL);
+mongoose.connect('mongodb+srv://first_user:iolbMc7f5IpRjsAa@cluster0.zgego.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
 
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error:"));
