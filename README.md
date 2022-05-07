@@ -18,5 +18,18 @@ A full stack web application where users can view, add reviews to, and add new c
   
 * Responsive web design
 
-* Display maps of campground locations by geocoding
+* Display maps of campground locations
+
+## Built With
+
+### Front-End
+
+* Bootstrap
+* ejs
+
+### Back-End
+
+* Express
+* MongoDB
+* Mongoose
 
