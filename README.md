@@ -6,7 +6,8 @@ Deployed at https://ancient-island-41088.herokuapp.com/.
 
 This is a project from the Udemy course [The Web Developer Bootcamp by Colt Steele](https://www.udemy.com/the-web-developer-bootcamp/) that I took.
 
-<img width="500" alt="Screen Shot 2022-05-07 at 20 30 35 PM" src="https://user-images.githubusercontent.com/73370828/167276681-94108c50-6ba5-462f-8eb6-de8bef30e069.png">
+
+<img width="1917" alt="Screen Shot 2022-05-07 at 8 33 09 PM" src="https://user-images.githubusercontent.com/73370828/167276717-c5d2f74f-fe00-44b7-9c68-cd9b5841046d.png">
 
 
 ## Features
