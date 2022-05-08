@@ -24,12 +24,22 @@ A full stack web application where users can view, add reviews to, and add new c
 
 ### Front-End
 
-* Bootstrap
-* ejs
+* [Bootstrap](https://getbootstrap.com/docs/5.0/)
+* [ejs](http://ejs.co/)
 
 ### Back-End
 
 * [express](https://expressjs.com/)
-* MongoDB
-* Mongoose
+* [mongoDB](https://www.mongodb.com/)
+* [mongoose](http://mongoosejs.com/)
+* [async](http://caolan.github.io/async/)
+* [method-override](https://github.com/expressjs/method-override#method-override)
+* [joi](https://joi.dev/api/?v=17.6.0)
+* [passport](http://www.passportjs.org/)
+* [passport-local](https://github.com/jaredhanson/passport-local#passport-local)
+* [express-session](https://github.com/expressjs/session#express-session)
+* [connect-flash](https://github.com/jaredhanson/connect-flash#connect-flash)
+* [cloudinary](https://cloudinary.com/)
+* [mapbox](https://www.mapbox.com/)
+
 
