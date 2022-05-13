@@ -4,7 +4,7 @@ A full stack web application where users can view and add reviews to campgrounds
 
 Deployed at https://ancient-island-41088.herokuapp.com/. 
 
-This is a project from the Udemy course [The Web Developer Bootcamp by Colt Steele](https://www.udemy.com/the-web-developer-bootcamp/) that I took.
+This is a project from Udemy course [The Web Developer Bootcamp by Colt Steele](https://www.udemy.com/the-web-developer-bootcamp/) that I took, with my own additions.
 
 
 <img width="1917" alt="Screen Shot 2022-05-07 at 8 33 09 PM" src="https://user-images.githubusercontent.com/73370828/167276717-c5d2f74f-fe00-44b7-9c68-cd9b5841046d.png">
