@@ -2,7 +2,7 @@
 
 A full stack web application where users can view and add reviews to campgrounds, and post new campgrounds. 
 
-Deployed at https://ancient-island-41088.herokuapp.com/. 
+Deployed at https://yelp-camp-h4ca.onrender.com. 
 
 This is a project from Udemy course [The Web Developer Bootcamp by Colt Steele](https://www.udemy.com/the-web-developer-bootcamp/) that I took, with my own additions.
 
